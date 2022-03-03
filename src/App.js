@@ -17,7 +17,13 @@ function App() {
     company:"Wild Mango",
     from:"2018",
     to:"2020",
-    location:"Lyndhurst"
+    location:"Lyndhurst",
+    university: "Kent State University",
+    univCity: "Kent Ohio",
+    degree: "Masters",
+    subject: "Computer Science", 
+    univFrom: "2016",
+    univTo: "2020"
   })
 
   function handleChange (event){

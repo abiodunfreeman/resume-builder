@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Display( props ){
-    const {firstName,lastName,title,address,description,email,position, company, from, to, location} = props.inputs
+    const {firstName,lastName,title,address,description,email,position, company, from, to, location, university, univCity, degree, subject, univFrom, univTo} = props.inputs
     console.log(props.inputs)
     // console.log(firstName)
 
@@ -23,6 +23,14 @@ export default function Display( props ){
             <h4>{company}</h4>
             <h5>{location}</h5>
             <p>{from} - {to}</p>
+            <p>
+    {university}
+    {univCity}
+    {degree}
+    {subject}
+    {univFrom}
+    {univTo}</p>
+            
         </div>
     )
 }
