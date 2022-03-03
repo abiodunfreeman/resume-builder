@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './components/header';
+import Inputs from './components/inputs';
+import Display from './components/Display';
+import { useState } from 'react';
 
 function App() {
+  const [inputs, setInputs] = useState({
+    firstName:"Abiodun",
+    lastName:"Freeman",
+    title:"Jr. Web Dev",
+    address:"1404 Hyde Shaffer Road",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet non incidunt earum saepe a nam, dolorem illum doloribus molestiae eius cum mollitia tenetur cupiditate iure, sed debitis voluptas quibusdam quo!",
+    email:"ayogidude@gmail.com",
+  })
+
+  function handleChange (event){
+    const {name, value} = event.target
+    setInputs(
+      {...inputs,
+      [name]: value,
+    }
+    )
+}
+
+console.log(inputs)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div id="container">
+        <Inputs 
+        handleChange={handleChange}
+        inputs={inputs}
+        setInputs={setInputs}
+        />
+        <Display
+          inputs={inputs}
+        />
+      </div>
     </div>
   );
 }
