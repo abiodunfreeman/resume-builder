@@ -1,0 +1,25 @@
+#cover{
+    border: 4px solid black;
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    height: 1000px;
+}
+#cover > * {
+    /* border: 5px solid green; */
+    margin: 8px;
+}
+#cover-main{
+    display:flex;
+    flex-direction: column;
+}
+#cover-side{
+    border-left: 1px solid black;
+    padding:5px;
+}
+#cover-header{
+    border: 3px solid red;
+}
+#cover-desc{
+    border: 3px solid blue;
+    
+}

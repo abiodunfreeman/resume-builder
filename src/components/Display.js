@@ -1,5 +1,5 @@
 import React from "react";
-
+import CoverLetter from "./coverLetter";
 export default function Display( props ){
     const {firstName,lastName,title,address,description,email,position, company, from, to, location, university, univCity, degree, subject, univFrom, univTo} = props.inputs
     console.log(props.inputs)
@@ -30,7 +30,9 @@ export default function Display( props ){
     {subject}
     {univFrom}
     {univTo}</p>
-            
+            <CoverLetter
+                inputs= {props.inputs}
+            />
         </div>
     )
 }
