@@ -13,6 +13,11 @@ function App() {
     address:"1404 Hyde Shaffer Road",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet non incidunt earum saepe a nam, dolorem illum doloribus molestiae eius cum mollitia tenetur cupiditate iure, sed debitis voluptas quibusdam quo!",
     email:"ayogidude@gmail.com",
+    position:"Server",
+    company:"Wild Mango",
+    from:"2018",
+    to:"2020",
+    location:"Lyndhurst"
   })
 
   function handleChange (event){

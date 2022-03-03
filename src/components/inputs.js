@@ -1,5 +1,6 @@
 import React from "react";
 import Personal from "./personal";
+import Experience from "./experience";
 export default function Inputs( props ){
     
     
@@ -10,12 +11,21 @@ export default function Inputs( props ){
     
     return(
         <div id='inputs'>
-        <h2>inputs</h2>
-        <Personal
+       
+        <form>
+            <h2>Personal</h2>
+            <Personal
             inputs={props.inputs}
             handleChange={props.handleChange}
             setInputs={props.setInputs}
-        />
+            />
+            <h2>Experience</h2>
+            <Experience
+            inputs={props.inputs}
+            handleChange={props.handleChange}
+            setInputs={props.setInputs}
+            />
+        </form>
     </div>
     )
 }

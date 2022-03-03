@@ -49,6 +49,15 @@
   }
 }
 
-#personal > * {
+.field{
+  /* border: 3px solid black; */
   margin: 5px;
+}
+
+.inputDiv{
+  border: 3px solid deeppink;
+}
+.inputDiv > * {
+  
+  margin: 8px;
 }
